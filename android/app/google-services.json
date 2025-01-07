@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "76893839862",
+    "project_id": "elabasystore-cca1a",
+    "storage_bucket": "elabasystore-cca1a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76893839862:android:64348a06b681ed62a8a7d7",
+        "android_client_info": {
+          "package_name": "com.example.elabasy_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7FdIf0oqK1_1m4e6ibI5lYZWB92h4pT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
