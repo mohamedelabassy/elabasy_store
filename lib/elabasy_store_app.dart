@@ -7,13 +7,14 @@ class ElabasyStoreApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Elabasy Store',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text(' Elabasy Store'),
+            title: const Text(' Elabasy Store'),
           ),
         ));
   }

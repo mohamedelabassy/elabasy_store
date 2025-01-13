@@ -1,12 +1,15 @@
 import 'dart:io';
 
+import 'package:elabasy_store/core/app/env.variables.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'elabasy_store_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EnvVariables.instance.init(envType: EnvTypeEnum.dev);
   Platform.isAndroid
       ? await Firebase.initializeApp(
           options: FirebaseOptions(
@@ -16,5 +19,8 @@ void main() async {
           projectId: 'elabasystore-cca1a',
         ))
       : await Firebase.initializeApp();
-  runApp(const ElabasyStoreApp());
+  await SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]).then(
+    (_) => runApp(const ElabasyStoreApp()),
+  );
 }
