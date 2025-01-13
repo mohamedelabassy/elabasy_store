@@ -12,7 +12,7 @@ void main() async {
   await EnvVariables.instance.init(envType: EnvTypeEnum.dev);
   Platform.isAndroid
       ? await Firebase.initializeApp(
-          options: FirebaseOptions(
+          options: const FirebaseOptions(
           apiKey: 'AIzaSyD7FdIf0oqK1_1m4e6ibI5lYZWB92h4pT8',
           appId: '1:76893839862:android:64348a06b681ed62a8a7d7',
           messagingSenderId: '76893839862',
