@@ -2,6 +2,7 @@ import 'package:elabasy_store/core/app/connentivity_controller.dart';
 import 'package:elabasy_store/core/app/routes/app_routes.dart';
 import 'package:elabasy_store/core/common/screens/no_network_screen.dart';
 import 'package:elabasy_store/core/style/fonts/font_family_helper.dart';
+import 'package:elabasy_store/core/style/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,10 +21,7 @@ class ElabasyStoreApp extends StatelessWidget {
             child: MaterialApp(
               title: 'Elabasy Store',
               debugShowCheckedModeBanner: false,
-              theme: ThemeData(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-                useMaterial3: true,
-              ),
+              theme: themeDark(),
               builder: (context, widget) {
                 return Scaffold(
                   body: Builder(builder: (context) {
