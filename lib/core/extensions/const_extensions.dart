@@ -1,9 +1,15 @@
+import 'package:elabasy_store/core/language/app_localizations.dart';
 import 'package:elabasy_store/core/style/theme/color_extensions.dart';
 import 'package:flutter/material.dart';
 
 extension ConTextExt on BuildContext {
 // color
   MyColors get color => Theme.of(this).extension<MyColors>()!;
+
+//languages
+  String translate(String langKey) {
+    return AppLocalizations.of(this)!.translate(langKey).toString();
+  }
 
   // navigator
   Future<dynamic> pushNamed(String routeName, {Object? arguments}) {
