@@ -39,7 +39,7 @@ class ElabasyStoreApp extends StatelessWidget {
                   ),
                 );
               },
-              initialRoute: AppRoutes.testOne,
+              initialRoute: AppRoutes.login,
               onGenerateRoute: (settings) =>
                   AppRoutes.oneGenerateRoute(settings),
             ),

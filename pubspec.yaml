@@ -38,6 +38,7 @@ dependencies:
   flutter_dotenv: ^5.2.1
   flutter_screenutil: ^5.9.3
   flutter_native_splash: ^2.4.4
+  animate_do: ^3.3.4
   
 
 dev_dependencies:

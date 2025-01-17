@@ -8,6 +8,8 @@ extension ConTextExt on BuildContext {
   MyColors get color => Theme.of(this).extension<MyColors>()!;
 // IMAGES
   MyAssets get assets => Theme.of(this).extension<MyAssets>()!;
+  // styles
+  TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;
 //languages
   String translate(String langKey) {
     return AppLocalizations.of(this)!.translate(langKey).toString();
