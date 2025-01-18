@@ -1,4 +1,4 @@
-import 'package:elabasy_store/core/app/routes/app_routes.dart';
+import 'package:elabasy_store/core/routes/app_routes.dart';
 import 'package:elabasy_store/core/common/animation/animation_do.dart';
 import 'package:elabasy_store/core/common/widget/text_app.dart';
 import 'package:elabasy_store/core/extensions/context_extensions.dart';

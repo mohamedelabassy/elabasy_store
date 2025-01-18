@@ -1,5 +1,5 @@
 import 'package:elabasy_store/core/app/connentivity_controller.dart';
-import 'package:elabasy_store/core/app/routes/app_routes.dart';
+import 'package:elabasy_store/core/routes/app_routes.dart';
 import 'package:elabasy_store/core/common/screens/no_network_screen.dart';
 import 'package:elabasy_store/core/language/app_localizations_setup.dart';
 import 'package:elabasy_store/core/style/theme/app_theme.dart';
