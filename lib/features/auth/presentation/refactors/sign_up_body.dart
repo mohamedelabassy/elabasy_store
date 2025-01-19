@@ -6,8 +6,6 @@ import 'package:elabasy_store/core/language/lang_keys.dart';
 import 'package:elabasy_store/core/style/fonts/font_with_helper.dart';
 import 'package:elabasy_store/features/auth/presentation/widget/auth_title_info.dart';
 import 'package:elabasy_store/features/auth/presentation/widget/dark_and_lang_button.dart';
-import 'package:elabasy_store/features/auth/presentation/widget/login/login_button.dart';
-import 'package:elabasy_store/features/auth/presentation/widget/login/login_text_form.dart';
 import 'package:elabasy_store/features/auth/presentation/widget/sign_up/sign_up_button.dart';
 import 'package:elabasy_store/features/auth/presentation/widget/sign_up/sign_up_text_form.dart';
 import 'package:elabasy_store/features/auth/presentation/widget/sign_up/user_avtar_image.dart';

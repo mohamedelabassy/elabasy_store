@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:elabasy_store/core/app/bloc_observer.dart';
 import 'package:elabasy_store/core/app/env.variables.dart';
+import 'package:elabasy_store/core/di/injecttion_container.dart';
+import 'package:elabasy_store/core/services/shared_pref/shared_pref.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,6 +23,8 @@ void main() async {
           projectId: 'elabasystore-cca1a',
         ))
       : await Firebase.initializeApp();
+  await SharedPref().instantiatePreferences();
+  await setupInjector();
   Bloc.observer = AppBlocObserver();
   await SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]).then(
