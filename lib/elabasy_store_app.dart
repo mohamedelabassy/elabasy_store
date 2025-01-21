@@ -57,7 +57,13 @@ class ElabasyStoreApp extends StatelessWidget {
                         ),
                       );
                     },
-                    initialRoute: AppRoutes.login,
+                    initialRoute: SharedPref()
+                                .getString(PrefKeys.accessToken) !=
+                            null
+                        ? SharedPref().getString(PrefKeys.userRole) == 'admin'
+                            ? AppRoutes.homeCustomer
+                            : AppRoutes.homeAdmin
+                        : AppRoutes.login,
                     onGenerateRoute: AppRoutes.oneGenerateRoute,
                   );
                 },

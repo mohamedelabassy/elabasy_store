@@ -1,5 +1,5 @@
+import 'package:elabasy_store/core/language/lang_keys.dart';
 import 'package:elabasy_store/core/services/graphql/api_result.dart';
-import 'package:elabasy_store/core/utils/app_setting.dart';
 import 'package:elabasy_store/features/auth/data/data_source/auth_data_source.dart';
 import 'package:elabasy_store/features/auth/data/models/login_request_body.dart';
 import 'package:elabasy_store/features/auth/data/models/login_response.dart';
@@ -14,7 +14,7 @@ class AuthRepos {
       final response = await _dataSource.login(body: body);
       return ApiResult.success(response);
     } catch (error) {
-      return const ApiResult.failure(errorMessage);
+      return const ApiResult.failure(LangKeys.loggedError);
     }
   }
 

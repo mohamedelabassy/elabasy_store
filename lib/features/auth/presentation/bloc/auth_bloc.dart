@@ -18,6 +18,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final AuthRepos _repos;
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  final formKey = GlobalKey<FormState>();
 
 // login
   FutureOr<void> _login(LoginEvent event, Emitter<AuthState> emit) async {
@@ -38,6 +39,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       // get user role
       final user = await _repos.userRole(token);
       await SharedPref().setInt(PrefKeys.userId, user.userId ?? 0);
+      await SharedPref().setString(PrefKeys.userId, user.userRole ?? '');
       emit(AuthState.success(userRole: user.userRole ?? ''));
     }, failure: (error) {
       emit(AuthState.error(error: error));
