@@ -64,6 +64,7 @@ class ElabasyStoreApp extends StatelessWidget {
                             ? AppRoutes.homeCustomer
                             : AppRoutes.homeAdmin
                         : AppRoutes.login,
+                    navigatorKey: sl<GlobalKey<NavigatorState>>(),
                     onGenerateRoute: AppRoutes.oneGenerateRoute,
                   );
                 },
